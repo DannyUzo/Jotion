@@ -12,7 +12,7 @@ import { SignInButton, UserButton } from "@clerk/clerk-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-const navbar = () => {
+const Navbar = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
   const scrolled = useScrollTop();
 
@@ -47,5 +47,5 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
   

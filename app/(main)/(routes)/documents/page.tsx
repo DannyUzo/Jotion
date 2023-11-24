@@ -12,7 +12,7 @@ import { toast } from 'sonner';
 import { useRouter } from 'next/navigation';
 
 
-const documents = () => {
+const Documents = () => {
   const { user } = useUser();
   const router = useRouter();
   const create = useMutation(api.documents.create);
@@ -41,4 +41,4 @@ const documents = () => {
   )
 }
 
-export default documents
+export default Documents
